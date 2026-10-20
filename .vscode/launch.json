@@ -1,0 +1,58 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "debugpy",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "python": "${workspaceFolder}/.venv/bin/python",
+      "windows": {
+        "python": "${workspaceFolder}\\.venv\\Scripts\\python.exe"
+      },
+      "console": "integratedTerminal",
+      "justMyCode": true,
+      "env": {
+        "PYTHONUTF8": "1"
+      },
+      "name": "Демо: транзакции PostgreSQL",
+      "module": "stock_ledger",
+      "args": [
+        "demo",
+        "--output",
+        "${input:demoFolder}"
+      ]
+    },
+    {
+      "type": "debugpy",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "python": "${workspaceFolder}/.venv/bin/python",
+      "windows": {
+        "python": "${workspaceFolder}\\.venv\\Scripts\\python.exe"
+      },
+      "console": "integratedTerminal",
+      "justMyCode": true,
+      "env": {
+        "PYTHONUTF8": "1"
+      },
+      "name": "Интеграция: конкурирующие клиенты",
+      "module": "unittest",
+      "args": [
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "integration.py",
+        "-v"
+      ]
+    }
+  ],
+  "inputs": [
+    {
+      "id": "demoFolder",
+      "type": "promptString",
+      "description": "Новая папка демо; прежняя не перезаписывается",
+      "default": "workspace/my-demo"
+    }
+  ]
+}

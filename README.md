@@ -147,3 +147,9 @@ exactly-once здесь нет. Исправление события требу
 В Git/ZIP входят только исходники по PUBLIC_FILES.txt. Пароли временного кластера,
 базы, CSV, логи, результаты и окружение исключены. Сканер — дополнительная проверка,
 а не полный аудит безопасности. Не используй реальные данные для учебных опытов.
+
+## GitHub
+
+[Исходники](https://github.com/Decl1s/postgres-stock-ledger),
+[релиз v0.1.0 с ZIP и SHA256SUMS](https://github.com/Decl1s/postgres-stock-ledger/releases/tag/v0.1.0),
+[CI Ubuntu/Windows и PostgreSQL](https://github.com/Decl1s/postgres-stock-ledger/actions/runs/39501214824).

@@ -21,11 +21,11 @@
 | ms-python.python / debugpy | 2026.6.0, уже установлены | Python проекта, unittest и F5; не зависимость CLI: https://marketplace.visualstudio.com/items?itemName=ms-python.python |
 | Pylance | 2026.4.1, уже установлен | Подсказки/навигация Python, необязательно для запуска: https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance |
 | Mermaid | Разметка NOTES.md | Статическая схема этапов: https://mermaid.js.org/ |
-| GitHub Actions | Конфигурация Ubuntu/Windows, не запущена | Проверки и архив после публикации: https://docs.github.com/ru/actions |
+| GitHub Actions | Быстрые тесты Ubuntu/Windows; БД Ubuntu — пройдены | Проверки и архив после публикации: https://docs.github.com/ru/actions |
 | actions/checkout | v4, SHA в ci.yml | Исходники без сохранения credentials: https://github.com/actions/checkout |
 | actions/setup-python | v5, SHA в ci.yml | Python 3.12 на CI runner: https://github.com/actions/setup-python |
 | actions/upload-artifact | v4, SHA в ci.yml | ZIP/SHA256SUMS как артефакт: https://github.com/actions/upload-artifact |
-| Docker official postgres | 16.15, только подготовленный CI service | Отдельная база stock_test для интеграции; локально Docker не использовался: https://hub.docker.com/_/postgres |
+| Docker official postgres | 16.15, проверенный CI service | Отдельная база stock_test для интеграции; локально Docker не использовался: https://hub.docker.com/_/postgres |
 
 ## Полный Python lock
 
